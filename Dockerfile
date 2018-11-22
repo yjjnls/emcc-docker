@@ -7,9 +7,9 @@ FROM conanio/gcc7
 MAINTAINER x-jj@foxmial.com
 
 # operations
+RUN sudo su
 RUN apt-get -yqq update 
 RUN apt-get -yqq upgrade
-RUN sudo su
 RUN cd /opt
 RUN sudo git clone https://github.com/juj/emsdk.git
 RUN cd emsdk
