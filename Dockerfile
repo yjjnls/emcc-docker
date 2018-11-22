@@ -7,9 +7,9 @@ FROM conanio/gcc7
 MAINTAINER x-jj@foxmail.com
 
 # operations
-RUN sudo apt-get -yqq update 
-RUN sudo apt-get -yqq upgrade
+# RUN sudo apt-get -yqq update 
+# RUN sudo apt-get -yqq upgrade
 RUN sudo git clone https://github.com/juj/emsdk.git
-RUN cd emsdk && sudo ./emsdk install latest && sudo ./emsdk activate latest && ./emsdk_env.sh
+RUN cd emsdk && sudo ./emsdk install latest && sudo ./emsdk activate latest
 
 # CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
