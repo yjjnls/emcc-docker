@@ -15,4 +15,4 @@ RUN git clone https://github.com/yjjnls/conanos.py.git && cd conanos.py && pytho
 # RUN pip install conanos
 RUN cd ~/.conan/ && wget https://raw.githubusercontent.com/conanos/dockers/master/emcc/external/0.1.0/settings.yml
 
-CMD ["source ~/emsdk/emsdk_env.sh"]
+CMD ["source", "~/emsdk/emsdk_env.sh"]
